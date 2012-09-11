@@ -13,10 +13,10 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 ###############################################################################
 
 # Sets window appearance to Graphite. 6 = Graphite, 1 = Blue
-defaults write 'Apple Global Domain' AppleAquaColorVariant 6
+defaults write NSGlobalDomain AppleAquaColorVariant 6
 
 # Sets window highlight to Graphite.
-defaults write "Apple Global Domain" AppleHighlightColor "0.780400 0.815700 0.858800"
+defaults write NSGlobalDomain AppleHighlightColor "0.780400 0.815700 0.858800"
 
 # Increase window resize speed for Cocoa applications
 defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
