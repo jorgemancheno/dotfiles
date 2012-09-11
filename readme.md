@@ -1,12 +1,8 @@
-# Paul's dotfiles.
+# Jorge's dotfiles.
 
 [mathias's readme](https://github.com/mathiasbynens/dotfiles/) is awesome. go read it.
 
-This repo is mostly for me but you're welcome to make suggestions. Mathias's is the project to fork.  I'm mostly catching up to him, @cowboy, and @gf3.
-
-## install the neccessary apps
-
-My basic setup is captured in `install-deps.sh` which adds homebrew, z, nave, etc.
+Now compiled mostly from [Paul Irish](https://github.com/paulirish/dotfiles) and [Mathias Bynens](https://github.com/mathiasbynens/dotfiles/)'s dotfiles with some minor customization.
 
 ## private config
 
@@ -60,19 +56,7 @@ When setting up a new Mac, you may want to set some sensible OS X defaults:
 ./.osx
 ```
 
-## Similar projects
-
-I recommend getting a [`.jshintrc`](https://github.com/jshint/node-jshint/blob/master/.jshintrc) and [`.editorconfig`](http://editorconfig.org/) defined for all your projects.
-
-
-
-
-
 ## overview of files
-
-####  Automatic config
-* `.ackrc` - for ack (better than grep)
-* `.vimrc`, `.vim` - vim config, obv.
 
 #### shell environement
 * `.aliases`
@@ -84,23 +68,20 @@ I recommend getting a [`.jshintrc`](https://github.com/jshint/node-jshint/blob/m
 * `.extra` - not included, explained above
 
 #### manual run
-* `install-deps.sh` - random apps i need installed
 * `.osx` - run on a fresh osx machine
-* `.brew` - homebrew intialization
 
 #### git, brah
 * `.git`
 * `.gitattributes`
 * `.gitconfig`
 * `.gitignore`
-
 * `.inputrc` - config for bash readline
 
 
 ## Installation
 
 ```bash
-git clone https://github.com/paulirish/dotfiles.git && cd dotfiles && ./sync.sh
+git clone https://github.com/jorgemancheno/dotfiles.git && cd dotfiles && ./sync.sh
 ```
 
 To update later on, just run the sync again.
