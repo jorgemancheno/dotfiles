@@ -1,28 +1,12 @@
 # Jorge's dotfiles.
 
-[mathias's readme](https://github.com/mathiasbynens/dotfiles/) is awesome. go read it.
-
 Now compiled mostly from [Paul Irish](https://github.com/paulirish/dotfiles) and [Mathias Bynens](https://github.com/mathiasbynens/dotfiles/)'s dotfiles with some minor customization.
 
-## private config
+## Private Config
 
 Toss it into a file called `.extra` which you do not commit to this repo and just keep in your `~/`
 
-I do something nice with my `PATH` there:
-
-```shell
-# PATH like a bawss
-      PATH=/opt/local/bin
-PATH=$PATH:/opt/local/sbin
-PATH=$PATH:/bin
-PATH=$PATH:~/.rvm/bin
-PATH=$PATH:~/code/git-friendly
-# ...
-
-export PATH
-```
-
-## Syntax highlighting
+## Syntax Highlighting
 
 …is really important. even for these files.
 
@@ -48,7 +32,7 @@ add the below to this file: `~/Library/Application Support/Sublime Text 2/Packag
 
 
 
-### Sensible OS X defaults
+### Sensible OS X Defaults
 
 When setting up a new Mac, you may want to set some sensible OS X defaults:
 
@@ -56,9 +40,9 @@ When setting up a new Mac, you may want to set some sensible OS X defaults:
 ./.osx
 ```
 
-## overview of files
+## Overview of Files
 
-#### shell environement
+#### Shell Environement
 * `.aliases`
 * `.bash_profile`
 * `.bash_prompt`
@@ -67,7 +51,7 @@ When setting up a new Mac, you may want to set some sensible OS X defaults:
 * `.functions`
 * `.extra` - not included, explained above
 
-#### manual run
+#### Manual Run
 * `.osx` - run on a fresh osx machine
 
 #### git, brah
