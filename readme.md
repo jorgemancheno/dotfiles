@@ -17,7 +17,6 @@ add the below to this file: `~/Library/Application Support/Sublime Text 2/Packag
 <string>.bash_profile</string>
 <string>.bash_prompt</string>
 <string>.bashrc</string>
-<string>.brew</string>
 <string>.exports</string>
 <string>.functions</string>
 <string>.git</string>
@@ -26,8 +25,6 @@ add the below to this file: `~/Library/Application Support/Sublime Text 2/Packag
 <string>.gitignore</string>
 <string>.inputrc</string>
 <string>.osx</string>
-<string>.vim</string>
-<string>.vimrc</string>
 ```
 
 
