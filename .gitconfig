@@ -17,7 +17,7 @@
     st = status
 [core]
     whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
-    excludesfile = ~/.gitignore
+    excludesfile = /opt/boxen/config/git/gitignore
     attributesfile = ~/.gitattributes
     autocrlf = false
     safecrlf = false
@@ -48,4 +48,7 @@
 [push]
     default = current
 [credential]
-    helper = osxkeychain
+    helper = /opt/boxen/bin/boxen-git-credential
+
+[hub]
+protocol = https
