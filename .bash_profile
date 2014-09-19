@@ -17,4 +17,6 @@ export LANG="en_US"
 complete -W "NSGlobalDomain" defaults
 
 # Show sys info
-archey -c
+if type -t archey > /dev/null; then
+    archey -c
+fi
