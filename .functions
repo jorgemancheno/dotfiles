@@ -3,8 +3,7 @@ function md() {
     mkdir -p "$@" && cd "$@"
 }
 
-
-# find shorthand
+# Find shorthand
 function f() {
     find . -name "$1"
 }
@@ -31,12 +30,10 @@ AWK
   )" | less -F
 }
 
-
 # Copy w/ progress
 cp_p () {
   rsync -WavP --human-readable --progress $1 $2
 }
-
 
 # Test if HTTP compression (RFC 2616 + SDCH) is enabled for a given URL.
 # Send a fake UA string for sites that sniff it instead of using the Accept-Encoding header. (Looking at you, ajax.googleapis.com!)
@@ -55,16 +52,13 @@ function json() {
     fi
 }
 
-
-# take this repo and copy it to somewhere else minus the .git stuff.
+# Take this repo and copy it to somewhere else minus the .git stuff.
 function gitexport(){
     mkdir -p "$1"
     git archive master | tar -x -C "$1"
 }
 
-
-
-# get gzipped size
+# Get gzipped size
 function gz() {
     echo "orig size    (bytes): "
     cat "$1" | wc -c
@@ -87,4 +81,14 @@ function escape() {
 function unidecode() {
     perl -e "binmode(STDOUT, ':utf8'); print \"$@\""
     echo # newline
+}
+
+# Print ANSI colors
+aa_256 () {
+    ( x=`tput op` y=`printf %$((${COLUMNS}-6))s`;
+    for i in {0..256};
+        do
+            o=00$i;
+            echo -e ${o:${#o}-3:3} `tput setaf $i;tput setab $i`${y// /=}$x;
+    done )
 }
